@@ -2,7 +2,7 @@ import { ButtonHTMLAttributes } from "react";
 import { styled } from "../styles";
 
 type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
-  variant: "primary" | "secondary" | "icon"
+  variant?: "primary" | "secondary" | "icon"
   children: React.ReactNode
 };
 
@@ -63,4 +63,3 @@ const Container = styled("button", {
     variant: "primary",
   },
 });
-// tirar url de hml
